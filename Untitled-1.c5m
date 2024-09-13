@@ -1,9 +1,33 @@
 icon "Reason.png"
-description "This is a very simple mod thatcreates a new Orc King class."
+description "This is a very simple mod that creates a new Orc King class."
+newweapon       "propaganda"
+trgrank         1
+aoe             999
+range           10
+init            7
+dmgtype         22
+dmg             5
+mind
+look            9
+reload1
+affecthuman
+
+
+newmonster      "rationalist"
+spr1            "sprites/rationalist.tga"
+descr           "a member of the cult of rationality" 
+hp              6
+mr              9
+str             6
+armor           0
+morale          8
+rank            -1
+human 
+rangedweapon    0 "propaganda"
+meleeweapon      0 "fist"
+
+
+
 newclass
 setclassname "The Orc King"
-addstartunits "Goblin" 10
-addstartunits "Goblin Archer" 10
-setmaincom "Goblin Shaman"
-addstartcom "Goblin Chieftain"
-addstartunits "Goblin Spearman" 5
+setmaincom "rationalist"
