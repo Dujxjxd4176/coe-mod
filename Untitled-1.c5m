@@ -1,0 +1,9 @@
+icon "Reason.png"
+description "This is a very simple mod thatcreates a new Orc King class."
+newclass
+setclassname "The Orc King"
+addstartunits "Goblin" 10
+addstartunits "Goblin Archer" 10
+setmaincom "Goblin Shaman"
+addstartcom "Goblin Chieftain"
+addstartunits "Goblin Spearman" 5
