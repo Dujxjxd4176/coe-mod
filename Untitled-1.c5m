@@ -235,7 +235,7 @@ message         -2   "A token result of investment, a debt not yet paid, and a f
 addresources    -2   4   20
 +chance         40
 message         -2  "The fields are ripe for harvest, our fruit of labor glistens in the sun.^Sickle reaps the field for our reward thus the cycle begins anew"    
-newunits        24  "5d10*protestor"
+newunits        24  "8d10*protestor"
 addvar          952  1
 addresources    -2   5   50
 alterterrain    5
