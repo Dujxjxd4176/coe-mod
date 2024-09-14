@@ -27,15 +27,14 @@ oneshot
 
 newweapon       "insult"
 trgrank         9
-aoe             5
 range           10
 init            7
-dmgtype         1
+dmgtype         8
 look            5
-dmg             1
+dmg             0
 mind
 nextalways            
-nextdmg         64
+nextdmg         2048
 
 newweapon       "scaredcat"
 dmgtype         12
