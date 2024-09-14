@@ -3,10 +3,10 @@ description "This is a very simple mod that creates a new Orc King class."
 
 
 newweapon       "propaganda"
-trgrank         1
-aoe             999
+trgrank         9
+aoe             9
 range           10
-init            7
+init            3
 dmgtype         22
 dmg             7
 look            9
@@ -15,16 +15,34 @@ reload1
 affecthuman
 
 newweapon       "megaphone"
-trgrank         1
-aoe             999
+trgrank         9
+aoe             9
 range           10
-init            7
+init            3
 dmgtype         22
 dmg             5
 look            9
 mind
 oneshot
-affecthuman
+
+newweapon       "insult"
+trgrank         9
+aoe             5
+range           10
+init            7
+dmgtype         1
+look            5
+dmg             1
+mind
+nextalways            
+nextdmg         64
+
+newweapon       "scaredcat"
+dmgtype         12
+dmg             0
+trgrank         1
+range           5
+init            7
 
 newweapon       "molotov"
 trgrank         1
@@ -94,6 +112,7 @@ armor           0
 morale          5
 rank            -1
 rangedweapon    0   "megaphone"
+rangedweapon    0   "insult"
 meleeweapon     0   "fist"
 human
 allitemslots
