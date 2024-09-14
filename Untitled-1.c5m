@@ -6,11 +6,24 @@ aoe             999
 range           10
 init            7
 dmgtype         22
-dmg             5
-mind
+dmg             7
 look            9
+mind
 reload1
 affecthuman
+
+
+newritpow
+
+newritual       "Incitement to oppress"
+level           1
+terr            -14
+terr            -13
+alterloc        999
+apcost          -1
+soundfx         57
+descr           "Hey Aristocrats, do you want some ways to make more money from your peasants,^I only want a couple serfs as an investment"
+free
 
 
 newmonster      "rationalist"
@@ -21,13 +34,61 @@ mr              9
 str             6
 armor           0
 morale          8
+rank            -1 
+rangedweapon    0   "propaganda"
+meleeweapon     0   "fist"
+power           0   1
+human
+allitemslots
+
+
+
+newmonster      "rational altar"
+spr1            "sprites/Rational-Altar.tga"
+hp              10
+mr              12
+str             0
+armor           3
+morale          99
 rank            -1
-human 
-rangedweapon    0 "propaganda"
-meleeweapon      0 "fist"
+gold            -1000000
+poisonres       100
+diseaseres
+charmres
+pierceres
+bluntres
+noslots
+stationary
+immobile
+gathersacr
+
+selectterr      999
+spr             "sprites/factory.tga"
+name            "Opressive Factory"
+gold            10
+iron            1
+pop             10
+lifeforce       30
+dead            10
+apcost          1
+settlement 
 
 
 
 newclass
-setclassname "The Orc King"
-setmaincom "rationalist"
+setclassname    "cult of rationality"
+setmaincom      "rationalist"
+addstartcom     "rational altar"
+addstartterr    5
+addstartterr    5
+goldbonus       0
+ironbonus       -99
+
+
+squareevent
+-turnnbr        0
++class          -2   "cult of rationality"
++terrain        999
+message         -2   "a return in the misery you caused  "
+addresources    -2   4   20
+endevent
