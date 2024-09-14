@@ -93,13 +93,14 @@ newritpow
 
 newritual       "sinister development"
 level           1
-terr            -14
+eventvarreq     953
+
 terr            -13
 alterloc        999
 apcost          -1
 soundfx         57
-descr           "Whispers words in the ear of the powerful sowing seeds in their mind, of tales so outlandish^ about cities overflowing with gold"
-
+descr           "Whispers words in the ear of the powerful sowing seeds in their mind, of tales so outlandish^ about cities overflowing with gold. ^This rituals requires time, for 'Time Has Ticked a Heaven Round the Stars'--Dylan Thomas"
+subeventvar     953
 
 newmonster      "protestor"
 spr1            "sprites/protestor.tga"
@@ -232,9 +233,10 @@ squareevent
 +terrain        999
 message         -2   "A token result of investment, a debt not yet paid, and a field not yet ripe of harvest "
 addresources    -2   4   20
-+chance         20
++chance         40
 message         -2  "The fields are ripe for harvest, our fruit of labor glistens in the sun.^Sickle reaps the field for our reward thus the cycle begins anew"    
 newunits        24  "5d10*protestor"
+addvar          952  1
 addresources    -2   5   50
 alterterrain    5
 endevent
@@ -244,6 +246,8 @@ playerevent
 +seasonleft     2
 addresources    -2   4   -10000
 addresources    -2   5   -10000
-message         "A season ends as another begins,from whence the story has end.The eternal cycle continues, ."
+addvar          953  1
+addvar          952  1
+message         "A season ends as this chapter has been closed.The eternal cycle continues, ."
 endevent
 
