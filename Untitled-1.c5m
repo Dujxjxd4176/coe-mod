@@ -8,7 +8,7 @@ aoe             9
 range           10
 init            3
 dmgtype         22
-dmg             7
+dmg             8
 look            9
 mind
 reload1
@@ -91,14 +91,14 @@ dmg             4
 
 newritpow
 
-newritual       "oppress peasants"
+newritual       "sinister development"
 level           1
 terr            -14
 terr            -13
 alterloc        999
 apcost          -1
 soundfx         57
-descr           "Stuff your peasants into overcrowded and dangerous factories "
+descr           "Whispers words in the ear of the powerful sowing seeds in their mind, of tales so outlandish^ about cities overflowing with gold"
 
 
 newmonster      "protestor"
@@ -191,6 +191,7 @@ armor           3
 morale          99
 rank            -1
 gold            -1000000
+iron            -1000000d
 poisonres       100
 diseaseres
 charmres
@@ -200,12 +201,13 @@ noslots
 stationary
 immobile
 gathersacr
+gatherhands
 
 selectterr      999
 spr             "sprites/factory.tga"
 name            "Opressive Factory"
 gold            10
-iron            1
+iron            5
 pop             10
 lifeforce       30
 dead            10
@@ -228,7 +230,20 @@ squareevent
 -turnnbr        0
 +class          -2   "cult of rationality"
 +terrain        999
-message         -2   "a return in the misery you caused  "
+message         -2   "A token result of investment, a debt not yet paid, and a field not yet ripe of harvest "
 addresources    -2   4   20
-newunits        24  "5d4*protestor"
++chance         20
+message         -2  "The fields are ripe for harvest, our fruit of labor glistens in the sun.^Sickle reaps the field for our reward thus the cycle begins anew"    
+newunits        24  "10d10*protestor"
+addresources    -2   5   50
+alterterrain    5
 endevent
+
+playerevent
++class          -2   "cult of rationality"
+seasondelay     1
+addresources    -2   4   -2000000
+addresources    -2   5   -2000050
+message         "A season ends as another begins anew.^The last page of an story has been written, yet a new story harkens forth."
+
+
