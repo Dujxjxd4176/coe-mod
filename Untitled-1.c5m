@@ -54,16 +54,6 @@ dmg             5
 sound           16
 look            3
 mundane
-nextdmg 32
-
-newweapon       "burning damage"
-trgrank         1
-range           1
-init            7
-dmgtype         12
-dmg             0      
-
-
 
 newweapon       "long pointy sign"
 trgrank         1
