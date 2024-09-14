@@ -1,5 +1,7 @@
 icon "Reason.png"
 description "This is a very simple mod that creates a new Orc King class."
+
+
 newweapon       "propaganda"
 trgrank         1
 aoe             999
@@ -11,6 +13,71 @@ look            9
 mind
 reload1
 affecthuman
+
+newweapon       "megaphone"
+trgrank         1
+aoe             999
+range           10
+init            7
+dmgtype         22
+dmg             5
+look            9
+mind
+oneshot
+affecthuman
+
+newweapon       "molotov"
+trgrank         1
+range           5
+init            7
+dmgtype         2
+dmg             3
+flymode         1
+flylook         15
+flysound        15
+arrow
+lob
+scatter
+oneshot
+mundane
+nextalways
+
+
+
+newweapon       "molotov flames"
+trgrank         1
+aoe             9
+range           1
+init            7
+dmgtype         4
+dmg             5
+sound           16
+look            3
+mundane
+next
+
+newweapon       "burning damage"
+trgrank         1
+range           1
+init            7
+dmgtype         12
+dmg             32         
+
+newweapon       "long pointy sign"
+trgrank         1
+range           2
+init            5
+dmgtype         3
+dmg             9
+oneshot
+
+newweapon       "blunt sign"
+trgrank         1
+range           1
+init            3
+dmgtype         2
+dmg             4
+
 
 
 newritpow
@@ -24,6 +91,69 @@ apcost          -1
 soundfx         57
 descr           "Hey Aristocrats, do you want some ways to make more money from your peasants,^I only want a couple serfs as an investment"
 free
+
+
+newmonster      "protestor"
+spr1            "sprites/protestor.tga"
+descr           "Peasants aren't happy being oppressed"
+hp              3
+mr              5
+str             3
+armor           0
+morale          5
+rank            -1
+rangedweapon    0   "megaphone"
+meleeweapon     0   "fist"
+human
+allitemslots
+
+newmonster      "protestor"
+spr1            "sprites/protestor.tga"
+descr           "Peasants aren't happy being oppressed"
+hp              4
+mr              5
+str             3
+armor           0
+morale          5
+rank            0
+rangedweapon    0   "molotov"
+rangedweapon    0   "molotov"
+meleeweapon     0   "fist"
+human
+allitemslots
+
+newmonster      "protestor"
+spr1            "sprites/protestor.tga"
+descr           "Peasants aren't happy being oppressed"
+hp              4
+mr              5
+str             3
+armor           0
+morale          5
+rank            1
+rangedweapon    0   "long pointy sign"
+meleeweapon     0   "fist"
+human
+battlefast
+frontpos
+shield
+allitemslots
+
+newmonster      "protestor"
+spr1            "sprites/protestor.tga"
+descr           "Peasants aren't happy being oppressed"
+hp              4
+mr              5
+str             3
+armor           1
+morale          5
+rank            1
+meleeweapon     0   "blunt sign"
+human
+allitemslots
+largeshield
+
+
 
 
 newmonster      "rationalist"
@@ -91,4 +221,5 @@ squareevent
 +terrain        999
 message         -2   "a return in the misery you caused  "
 addresources    -2   4   20
+newunits        24  "5d4*protestor"
 endevent
