@@ -234,16 +234,16 @@ message         -2   "A token result of investment, a debt not yet paid, and a f
 addresources    -2   4   20
 +chance         20
 message         -2  "The fields are ripe for harvest, our fruit of labor glistens in the sun.^Sickle reaps the field for our reward thus the cycle begins anew"    
-newunits        24  "10d10*protestor"
+newunits        24  "5d10*protestor"
 addresources    -2   5   50
 alterterrain    5
 endevent
 
 playerevent
 +class          -2   "cult of rationality"
-seasondelay     1
-addresources    -2   4   -2000000
-addresources    -2   5   -2000050
-message         "A season ends as another begins anew.^The last page of an story has been written, yet a new story harkens forth."
-
++seasonleft     2
+addresources    -2   4   -10000
+addresources    -2   5   -10000
+message         "A season ends as another begins,from whence the story has end.The eternal cycle continues, ."
+endevent
 
