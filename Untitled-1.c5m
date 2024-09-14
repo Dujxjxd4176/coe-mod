@@ -82,15 +82,14 @@ dmg             4
 
 newritpow
 
-newritual       "Incitement to oppress"
+newritual       "oppress peasants"
 level           1
 terr            -14
 terr            -13
 alterloc        999
 apcost          -1
 soundfx         57
-descr           "Hey Aristocrats, do you want some ways to make more money from your peasants,^I only want a couple serfs as an investment"
-free
+descr           "Stuff your peasants into overcrowded and dangerous factories "
 
 
 newmonster      "protestor"
